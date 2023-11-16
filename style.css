@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap');
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --azul-botao: #167BF7;
+    --preto-background: #00030C;
+    --fonte-principal: 'Inter Tight', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--preto-background);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url("./assets/Background.png");
+    background-repeat: no-repeat; /*se eu nao usar essa proprietade, a imagem do background fica se repetindo (preenchendo a tela). como eu nao quero isso, eu preciso dizer pro sistema que eu nao queroo essa repeticao atraves dess apropriedade.*/
+    background-size: contain; /*digo pro sistema que eu quero que toda a extensao do viewpoint seja preenchida, ja que o meu coontainer esta configurado como height; 100vh*/
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa {
+    margin: 6em;
+}
+
+.container__titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    background-color: var(--azul-botao);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: #EC2F46;
+    border: 0.3px solid var(--branco-principal);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 0.75rem;
+    color: var(--cinza-secundario);
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.botao_secundario2 {
+    display: inline-block;
+    margin-top: 1em;   
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /*tirar os bullet points da lista*/
+    color: var(--branco-principal);
+    margin: 5em 0;
+
+}
+
+.dispositivos__titulo {
+    font-size: 3rem;
+    color: var(--branco-principal);
+    
+}
+
+.lista__item {
+    font-size: 2rem;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /*tirar os bullet points da lista*/
+    color: var(--branco-principal);
+    margin: 2em 0;
+}
+
+.lista__link {
+    align-items: center;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+
+.lista__link__click {
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.lista__link__click:hover {
+    border-bottom: 1px solid var(--branco-principal);
+}
+
+.rodape__texto {
+    color: var(--cinza-secundario);
+    font-size: 0.875rem;
+    margin: 2rem 0;
+
+}
